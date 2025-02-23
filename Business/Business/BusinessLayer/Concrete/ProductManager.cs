@@ -6,8 +6,17 @@ namespace Business.BusinessLayer.Concrete
 {
     public class ProductManager : GenericManager<Product>, IProductService
     {
-        public ProductManager(IGenericRepository<Product> repository) : base(repository)
+
+        private readonly IProductDAL _productDAL;
+
+        public ProductManager(IGenericRepository<Product> repository,IProductDAL productDAL) : base(repository)
         {
+            _productDAL=productDAL;
+        }
+
+        public List<Product> GetProductListWithCategory()
+        {
+            return _productDAL.GetListWithCategory();
         }
     }
 }
