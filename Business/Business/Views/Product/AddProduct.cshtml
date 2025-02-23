@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "CategoryList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@using Business.Models.Concrete
+@model Product
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Yeni Ürün Ekleme</h4>
+
+
+            @using (Html.BeginForm("AddProduct", "Product", FormMethod.Post))
+            {
+                @* <div class="form-group">
+                    <label for="exampleInputName1">Ürün Id</label>
+
+                    @Html.TextBoxFor(x => x.ProductId, new { @class = "form-control", @readonly = "readonly" })
+                    @Html.HiddenFor(x => x.ProductId)
+
+
+                </div> *@
+                <div class="form-group">
+                    <label for="exampleInputName1">İsim</label>
+
+                    @Html.TextBoxFor(x => x.ProductName, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.ProductName, "", new { @class = "text-danger" })
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Fiyatı</label>
+
+                    @Html.TextBoxFor(x => x.ProductPrice, new { @class = "form-control", type = "number", step = "0.01" })
+                    @Html.ValidationMessageFor(x => x.ProductPrice, "", new { @class = "text-danger" })
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Kategorisi</label>
+                    @Html.DropDownListFor(x => x.CategoryId, (List<SelectListItem>)ViewBag.CategoryValue, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.CategoryId, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Açıklama</label>
+
+                    @Html.TextBoxFor(x => x.ProductDescription, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.ProductDescription, "", new { @class = "text-danger" })
+
+                </div>
+                <div class="form-group">
+                    <label>@Html.RadioButtonFor(x => x.ProductStatus, true) Evet</label>
+                    <label>@Html.RadioButtonFor(x => x.ProductStatus, false) Hayır</label>
+                </div>
+
+                <button class="btn btn-gradient-primary mr-2">Gönder</button>
+            }
+
+        </div>
+    </div>
+</div>

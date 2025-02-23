@@ -1,0 +1,87 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@using Business.Models.Concrete
+@model List<Category>
+
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Kategoriler</h4>
+            @* <h4 class="card-title">@Model[0].Writer.WriterName</h4> *@
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th> Id </th>
+                        <th> Adı </th>
+                        <th> Açıklama </th>
+                        <th> Durum </th>
+                        <th> Düzenle </th>
+                        <th> Sil </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+
+                        <tr>
+
+                            <td >@item.CategoryId </td>
+                            <td>@item.CategoryName</td>
+                            <td>@item.CategoryDescription</td>
+                            <td> @item.CategoryStatus </td>
+                            <td> <a href="/Category/EditCategory/@item.CategoryId" class="btn btn-info btn-sm">Düzenle</a></td>
+                            <td>
+                                <!-- Silme Butonu (Modal'ı Açmak İçin) -->
+                                <button type="button" class="btn btn-danger btn-sm"
+                                        data-toggle="modal" data-target="#deleteModal"
+                                        onclick="setDeleteUrl('@Url.Action("DeleteCategory", "Category", new { id = item.CategoryId })')">
+                                    Sil
+                                </button>
+                            </td>
+                        </tr>
+
+
+                    }
+
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<a href="/Category/AddCategory/" class="btn btn-info btn-fw">Yeni Kategori Oluştur</a>
+
+<!-- Silme Onay Modali (Tek Seferde Eklenmeli) -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Silme İşlemi</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Bu kategoriyi silmek istediğinize emin misiniz?</p>
+                <small>Kategoriyi sildiğinizde,bağlı olduğu tüm ürünler de silinecektir!</small>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">İptal</button>
+                <a href="#" id="confirmDeleteBtn" class="btn btn-danger">Evet, Sil</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal için JavaScript Kodu -->
+<script>
+    function setDeleteUrl(url) {
+        document.getElementById("confirmDeleteBtn").setAttribute("href", url);
+    }
+</script>

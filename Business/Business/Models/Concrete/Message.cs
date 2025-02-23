@@ -11,7 +11,7 @@ namespace Business.Models.Concrete
         public string CustomerEmail { get; set; } // E-posta
         public string? CustomerPhone { get; set; } // Telefon (opsiyonel)
         public string CustomerMessage { get; set; } // Müşteri mesajı
-        public DateTime MessageCreatedDate { get; set; } = DateTime.UtcNow; // Talep oluşturulma tarihi
+        public DateTime MessageCreatedDate { get; set; } = DateTime.Parse(DateTime.Now.ToShortDateString()); // Talep oluşturulma tarihi
         public bool MessageIsAnswered { get; set; } = false; // Yanıtlandı mı?
 
         // Hangi ürüne ait olduğunun takibi

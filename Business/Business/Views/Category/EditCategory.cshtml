@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "CategoryList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@using Business.Models.Concrete
+@model Category
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Kategori Güncelle</h4>
+
+
+            @using (Html.BeginForm("EditCategory", "Category", FormMethod.Post))
+            {
+                <div class="form-group">
+                    <label for="exampleInputName1">Kategori Id</label>
+
+                    @Html.TextBoxFor(x => x.CategoryId, new { @class = "form-control", @readonly = "readonly" })
+                    @Html.HiddenFor(x => x.CategoryId)
+
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">İsim</label>
+
+                    @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.CategoryName, "", new { @class = "text-danger" })
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleTextarea1">Açıkama</label>
+                    @Html.TextAreaFor(x => x.CategoryDescription, 3, 10, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.CategoryDescription, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    <label>@Html.RadioButtonFor(x => x.CategoryStatus, true) Evet</label>
+                    <label>@Html.RadioButtonFor(x => x.CategoryStatus, false) Hayır</label>
+                </div>
+                
+                <button class="btn btn-gradient-primary mr-2">Gönder</button>
+            }
+
+        </div>
+    </div>
+</div>

@@ -11,6 +11,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddScoped(typeof(IProductDAL), typeof(ProductRepository));
+builder.Services.AddScoped(typeof(ICategoryDAL), typeof(CategoryRepository));
 builder.Services.AddScoped(typeof(IGenericService<>), typeof(GenericManager<>));
 
 builder.Services.AddScoped<IAdminService, AdminManager>();

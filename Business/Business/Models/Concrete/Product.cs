@@ -9,7 +9,7 @@ namespace Business.Models.Concrete
         public string ProductName { get; set; } // Ürün Adı
         public string ProductDescription { get; set; } // Açıklama
         public decimal ProductPrice { get; set; } // Fiyat
-        public DateTime ProductCreatedDate { get; set; } = DateTime.UtcNow; // Eklenme Tarihi
+        public DateTime ProductCreatedDate { get; set; } = DateTime.Parse(DateTime.Now.ToShortDateString()); // Eklenme Tarihi
         public bool ProductStatus { get; set; }
 
         public int CategoryId { get; set; }

@@ -10,7 +10,7 @@ namespace Business.Models.Concrete
         public string CommentUserName { get; set; }
         public string CommentTitle { get; set; }
         public string CommentContent { get; set; }
-        public DateTime CommentDate { get; set; }
+        public DateTime CommentDate { get; set; } = DateTime.Parse(DateTime.Now.ToShortDateString());
         public bool CommentStatus { get; set; }
 
         public int ProductId { get; set; }
