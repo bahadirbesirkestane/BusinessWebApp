@@ -1,0 +1,24 @@
+﻿
+@using Business.Models.ViewModel
+@model List<CategoryProductCountViewModel>
+
+
+<div class="sidebar-widget sidebar-blog-category">
+    <div class="sidebar-title">
+        <h4>Kategoriler</h4>
+    </div>
+    <ul class="blog-cat">
+
+        @foreach (var item in Model)
+        {
+            <li>
+                <a href="#link">
+                    <span class="fa fa-angle-double-right"></span> @item.CategoryName
+                    <label>@item.ProductCount</label>
+                </a>
+            </li>
+        }
+        
+        
+    </ul>
+</div>

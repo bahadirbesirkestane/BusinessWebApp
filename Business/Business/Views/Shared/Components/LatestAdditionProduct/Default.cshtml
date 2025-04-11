@@ -1,0 +1,24 @@
+﻿
+@using Business.EntityLayer.Concrete
+@model List<Product>
+
+<div class="sidebar-widget popular-posts">
+    <div class="sidebar-title">
+        <h4>Son Eklenenler</h4>
+    </div>
+
+    @foreach (var item in Model)
+    {
+        <article class="post">
+            <figure class="post-thumb"><img src="@(item.Images != null && item.Images.Any() ? item.Images.First().ImageUrl : "/images/default.png")"
+                class="radius-image" alt=""></figure>
+            <div class="text">
+                <a href="/Product/ProductSingle/@item.ProductId">@item.ProductName</a>
+            </div>
+            <div class="post-info">@(((DateTime)item.ProductCreatedDate).ToString("dd MMM yyyy HH:mm"))</div>
+        </article>
+        <br />
+        
+    }
+
+</div>

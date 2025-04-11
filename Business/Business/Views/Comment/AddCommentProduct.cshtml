@@ -1,0 +1,41 @@
+﻿
+@using Business.EntityLayer.Concrete
+@model Product
+@{
+    if(ViewBag.Comment!=null)
+    {
+        Comment value = ViewBag.Comment;
+    }
+}
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>    
+}
+
+<div class="leave-comment-form pb-lg-5" id="comment">
+    <h3 class="aside-title">Yorum Ekleyin</h3>
+
+    <form asp-controller="Comment" asp-action="AddComment" asp-route-productId="@Model.ProductId" method="post">
+        <div class="input-grids">
+            <div class="row">
+                <div class="form-group col-lg-6 mt-lg-0 mt-3">
+                    <input type="text" name="CommentUserName" class="form-control" placeholder="İsim Soyisim" required="">
+                </div>
+                <div class="form-group col-lg-6 mt-lg-0 mt-3">
+                    <input type="text" name="CommentTitle" class="form-control" placeholder="Yorumunuza Başlık Ekleyin" required="">
+                </div>
+            </div>
+            <div class="form-group mt-lg-0 mt-3">
+                <textarea name="CommentContent" class="form-control" placeholder="Yorumunuz..." required=""></textarea>
+            </div>
+
+        </div>
+        <div class="w3lhny-submit submit text-right mt-lg-0 mt-3">
+            <button class="btn btn-style btn-primary">
+                Yorum Yap
+            </button>
+        </div>
+    </form>
+</div>
+

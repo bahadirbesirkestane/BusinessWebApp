@@ -1,8 +1,7 @@
-﻿using Business.BusinessLayer.Abstract;
-using Business.BusinessLayer.Concrete;
+﻿
+using Business.BusinessLayer.Abstract;
 using Business.BusinessLayer.ValidationRules;
-using Business.DataAccess.Abstact;
-using Business.Models.Concrete;
+using Business.EntityLayer.Concrete;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 using System.Configuration;
@@ -23,7 +22,7 @@ namespace Business.Controllers
 
         public IActionResult Index()
         {
-            var values = _categoryService.GetList();
+            //var values = _categoryService.GetList();
 
             return View();
         }
@@ -70,9 +69,10 @@ namespace Business.Controllers
         [HttpGet]
         public IActionResult EditCategory(int id)
         {
-            var categoryValue=_categoryService.TGetById(id);
+            var categoryValue = _categoryService.TGetById(id);
 
             return View(categoryValue);
+
         }
 
         [HttpPost]
@@ -87,9 +87,9 @@ namespace Business.Controllers
 
             if (results.IsValid)
             {
-                categoryValue.CategoryName=category.CategoryName;
-                categoryValue.CategoryDescription=category.CategoryDescription;
-                categoryValue.CategoryStatus=category.CategoryStatus;
+                categoryValue.CategoryName = category.CategoryName;
+                categoryValue.CategoryDescription = category.CategoryDescription;
+                categoryValue.CategoryStatus = category.CategoryStatus;
 
                 _categoryService.UpdateT(categoryValue);
 
@@ -104,6 +104,7 @@ namespace Business.Controllers
             }
 
             return View(categoryValue);
+            
         }
 
         public IActionResult DeleteCategory(int id)

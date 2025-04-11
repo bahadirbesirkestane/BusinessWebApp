@@ -2,7 +2,7 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-@using Business.Models.Concrete
+@using Business.EntityLayer.Concrete
 @model List<Product>
 
 
@@ -23,6 +23,7 @@
                         <th> Oluşturma Tarihi </th>
                         <th> Durum </th>
                         <th> Düzenle </th>
+                        <th> Resim Ekle </th>
                         <th> Sil </th>
 
                     </tr>
@@ -42,6 +43,10 @@
                             <td>@item.ProductDescription</td>
                             <td> @item.ProductStatus </td>
                             <td> <a href="/Product/EditProduct/@item.ProductId" class="btn btn-info btn-sm">Düzenle</a></td>
+                            <td>
+                                <!-- Resim Ekleme Sayfasına Yönlendirme -->
+                                <a href="/Product/AddProductImage/@item.ProductId" class="btn btn-success btn-sm">Resimleri</a>
+                            </td>
                             <td>
                                 <!-- Silme Butonu (Modal'ı Açmak İçin) -->
                                 <button type="button" class="btn btn-danger btn-sm"

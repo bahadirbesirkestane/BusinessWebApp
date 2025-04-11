@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "CategoryList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@using Business.EntityLayer.Concrete
+@model Message
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Mesaj Gönderin</h4>
+
+
+            @using (Html.BeginForm("AddMessage", "Message", FormMethod.Post))
+            {
+                
+                <div class="form-group">
+                    <label for="exampleInputName1">İsim Soyisim</label>
+
+                    @Html.TextBoxFor(x => x.CustomerName, new { @class = "form-control", placeholder = "Adınızı ve Soyadınızı giriniz" })
+                    @Html.ValidationMessageFor(x => x.CustomerName, "", new { @class = "text-danger" })
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Mesajınız</label>
+
+                    @Html.TextAreaFor(x => x.CustomerMessage, new { @class = "form-control", placeholder = "Mesajınızı buraya yazınız" })
+                    @Html.ValidationMessageFor(x => x.CustomerMessage, "", new { @class = "text-danger" })
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Mail Adresi</label>
+
+                    @Html.TextBoxFor(x => x.CustomerEmail, new { @class = "form-control", placeholder = "ornek@example.com" })
+                    @Html.ValidationMessageFor(x => x.CustomerEmail, "", new { @class = "text-danger" })
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Telefon Numarası</label>
+
+                    @Html.TextBoxFor(x => x.CustomerPhone, new { 
+                        @class = "form-control", 
+                        placeholder = "+90555XXXXXXX",
+                        onfocus = "if(this.value=='') this.value='+90';"
+                    })
+                    @Html.ValidationMessageFor(x => x.CustomerPhone, "", new { @class = "text-danger" })
+
+                </div>
+                <div class="form-group">
+                    <label for="ProductId">Ürün Seç (Opsiyonel)</label>
+                    @Html.DropDownList("ProductId", ViewBag.Products as List<SelectListItem>, "Bir ürün seçin (Opsiyonel)", new { @class = "form-control" })
+                </div>
+                <button class="btn btn-gradient-primary mr-2">Gönder</button>
+            }
+
+        </div>
+    </div>
+</div>

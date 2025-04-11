@@ -1,0 +1,47 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@using Business.EntityLayer.Concrete
+@model Page
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Yeni Sayfa Ekleme</h4>
+
+
+            @using (Html.BeginForm("AddPage", "Page", FormMethod.Post))
+            {
+                <div class="form-group">
+                    <label for="exampleInputName1">Başlık</label>
+
+                    @Html.TextBoxFor(x => x.PageTitle, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.PageTitle, "", new { @class = "text-danger" })
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleTextarea1">İçerik</label>
+                    @Html.TextAreaFor(x => x.PageContent, 3, 10, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.PageContent, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputName1">Sayfa Tipi</label>
+
+                    @Html.TextBoxFor(x => x.PageType, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.PageType, "", new { @class = "text-danger" })
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName1">Sayfa Durumu</label>
+
+                    <label>@Html.RadioButtonFor(x => x.PageStatus, true) Evet</label>
+                    <label>@Html.RadioButtonFor(x => x.PageStatus, false) Hayır</label>
+                </div>
+                <button class="btn btn-gradient-primary mr-2">Gönder</button>
+            }
+
+        </div>
+    </div>
+</div>

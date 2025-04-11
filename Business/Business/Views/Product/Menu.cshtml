@@ -1,0 +1,76 @@
+﻿@using Business.Models.ViewModel
+@model ProductListViewModel
+
+<div class="container" data-wow-delay="0.1s">
+    <!-- Kategori Filtreleme -->
+    <div class="category-filter">
+        <ul class="category-list">
+            <li><a href="#" onclick="filterProducts(null)">Tüm Ürünler</a></li>
+            @foreach (var category in Model.Categories)
+            {
+                <li>
+                    <a href="#" data-bs-toggle="pill" onclick="filterProducts('@category.CategoryId')">
+                        @category.CategoryName
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+
+    <!-- Ürün Listesi (AJAX ile Güncellenecek) -->
+    <div id="productContainer">
+        @await Html.PartialAsync("_ProductListPartial", Model.Products)
+        @* @Html.Partial("_ProductListPartial", Model.Products) *@
+        
+    </div>
+</div>
+
+<!-- AJAX -->
+<script>
+    function filterProducts(categoryId) {
+        $.ajax({
+            url: "/Product/GetProductsByCategory",
+            type: "GET",
+            data: { categoryId: categoryId },
+            success: function (result) {
+                $("#productContainer").html(result);
+            },
+            error: function () {
+                alert("Ürünler yüklenirken hata oluştu.");
+            }
+        });
+    }
+</script>
+
+
+<!-- CSS -->
+<style>
+    .category-filter {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .category-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+        .category-list li a {
+            padding: 10px 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+            .category-list li a:hover {
+                background-color: #007bff;
+                color: white;
+            }
+</style>
+

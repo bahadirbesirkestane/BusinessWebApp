@@ -1,0 +1,50 @@
+﻿
+@using Business.EntityLayer.Concrete
+@model List<Product>
+
+
+<div class="item mt-5">
+    <h3 class="aside-title">İlginizi Çekebilir</h3>
+    <div class="row">
+
+        <div class="col-lg-6">
+            <div class="list-view list-view1">
+                <div class="grids5-info">
+                    <a href="/Product/ProductSingle/@Model[0].ProductId" class="d-block zoom">
+                        <img src="@(Model[0].Images != null && Model[0].Images.Any() ? Model[0].Images.First().ImageUrl : "/images/default.png")"
+                             alt="" class="img-fluid radius-image news-image" />
+                    </a>
+                    <div class="blog-info align-self">
+                        <a href="/Product/ProductSingle/@Model[0].ProductId" class="blog-desc1">
+                            @Model[0].ProductName
+                        </a>
+                        @* <div class="author align-items-center mt-2 mb-1">
+                            <a href="#">Steven Rich </a> in <a href="#url"> Constraction</a>
+                        </div> *@
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mt-lg-0 mt-5">
+            <div class="list-view list-view1">
+                <div class="grids5-info">
+                    <a href="/Product/ProductSingle/@Model[1].ProductId" class="d-block zoom">
+                        <img src="@(Model[1].Images != null && Model[1].Images.Any() ? Model[1].Images.First().ImageUrl : "/images/default.png")"
+                        alt="" class="img-fluid radius-image news-image">
+                    </a>
+                    <div class="blog-info align-self">
+                        <a href="/Product/ProductSingle/@Model[0].ProductId" class="blog-desc1">
+                            @Model[1].ProductName
+                        </a>
+                        @* <div class="author align-items-center mt-2 mb-1">
+                            <a href="#">Steven Rich </a> in <a href="#url"> Interior</a>
+                        </div> *@
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

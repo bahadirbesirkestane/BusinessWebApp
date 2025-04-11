@@ -1,0 +1,168 @@
+﻿@using Business.Models.ViewModel
+@using Business.EntityLayer.Concrete
+@model Product
+
+@{
+
+
+    var pages = new PrevNextPageViewModel();
+
+    pages = ViewBag.PagesModel;
+
+
+}
+
+
+<section class="w3l-text-11 py-5">
+    <div class="text11 py-md-5 py-4">
+        <div class="container">
+            <div class="row">
+                <!--left-->
+                <div class="col-lg-8 text11-content">
+                    <div class="product-gallery">
+                        <!-- Büyük Resim -->
+                        <img id="mainImage" src="@(Model.Images != null && Model.Images.Any() ? Model.Images.First().ImageUrl : "/images/default.png")"
+                             class="img-fluid main-product-image" alt="Ürün Resmi">
+
+                        <!-- Küçük Resimler -->
+                        <div class="image-thumbnails mt-3">
+                            @if (Model.Images != null && Model.Images.Any())
+                            {
+                                foreach (var image in Model.Images)
+                                {
+                                    <img src="@image.ImageUrl" class="img-thumbnail small-image"
+                                         onclick="changeMainImage('@image.ImageUrl', this)" alt="Ürün Resmi">
+                                }
+                            }
+                        </div>
+                    </div>
+
+                    <h4 class="mt-3">@Model.ProductName</h4>
+                    <h6>@(((DateTime)Model.ProductCreatedDate).ToString("dd MMM yyyy HH:mm"))</h6>
+                    <h4>@Model.ProductPrice</h4>
+
+                    <p class="mt-4 mb-3">
+                        @Model.ProductDescription
+                    </p>
+
+                    @await Component.InvokeAsync("YouAreInterested", new { productId = Model.ProductId })
+
+                    <div class="social-share-blog mt-5">
+                        <ul class="column3 social m-0 p-0">
+                            <li><p class="m-0 mr-4">Bu ürünü paylaşın : </p></li>
+                            <li><a href="#facebook" class="facebook"><span class="fab fa-facebook-f"></span></a></li>
+                            <li><a href="#twitter" class="twitter"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="#instagram" class="instagram"><span class="fab fa-instagram"></span></a></li>
+                        </ul>
+                    </div>
+
+                    @await Html.PartialAsync("~/Views/Product/PostNavigation.cshtml", pages)
+
+                    <!-- Comment List -->
+                    @await Component.InvokeAsync("CommentListByProduct", new { productId = Model.ProductId })
+                    @await Html.PartialAsync("~/Views/Comment/AddCommentProduct.cshtml", Model)
+                </div>
+                <!--//left-->
+                <!--right-->
+                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12 mt-lg-0 mt-5">
+                    <aside class="sidebar ps-lg-4">
+                        <!--Blog Category Widget-->
+                        @await Component.InvokeAsync("CategoryList")
+
+
+                        <!-- Popular Post Widget-->
+                        @await Component.InvokeAsync("LatestAdditionProduct")
+
+
+                        <!-- sidebar sticky -->
+                        <div class="sidebar-widget popular-posts">
+                            <div class="sidebar-sticky-fix">
+                                <!--Blog Category Widget-->
+                                <!-- Tags Widget-->
+                                <div class="sidebar-widget popular-tags">
+                                    <div class="sidebar-title">
+                                        <h4>Etiketler</h4>
+                                    </div>
+                                    <a href="#url">Concrete</a>
+                                    <a href="#url">Interior</a>
+                                    <a href="#url">Office</a>
+                                    <a href="#url">Rent</a>
+                                    <a href="#url">Art</a>
+                                    <a href="#url">Furnished</a>
+                                    <a href="#url">Renovated</a>
+
+                                </div>
+
+                                <!-- Subscribe Widget-->
+
+                            </div>
+                        </div>
+                        <div class="sidebar-widget popular-posts">
+                            <!--Blog Category Widget-->
+                            <!-- Tags Widget-->
+                            <div class="sidebar-widget popular-tags">
+                                <div class="sidebar-title">
+                                    <h4>Reklam</h4>
+                                </div>
+
+                                <img src="assets/images/ab5.jpg" alt="" class="img-fluid radius-image" />
+                            </div>
+
+                            <!-- Subscribe Widget-->
+                        </div>
+                        <!-- //sidebar sticky -->
+                    </aside>
+                </div>
+                <!--//right-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript -->
+<script>
+    function changeMainImage(imageUrl, element) {
+        document.getElementById("mainImage").src = imageUrl;
+
+        // Önce tüm küçük resimlerin border'ını sıfırla
+        let thumbnails = document.querySelectorAll(".small-image");
+        thumbnails.forEach(img => img.classList.remove("active-thumbnail"));
+
+        // Seçilen resmin border'ını değiştir
+        element.classList.add("active-thumbnail");
+    }
+</script>
+
+<!-- CSS -->
+<!-- CSS -->
+<style>
+    .main-product-image {
+        width: 100%;
+        max-height: 400px;
+        object-fit: contain;
+        border-radius: 5px;
+    }
+
+    .image-thumbnails {
+        display: flex;
+        gap: 10px;
+    }
+
+    .small-image {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        cursor: pointer;
+        border: 2px solid #ccc; /* Varsayılan gri çerçeve */
+        transition: 0.3s;
+        border-radius: 5px;
+    }
+
+        .small-image:hover {
+            border: 2px solid #007bff; /* Hover sırasında mavi çerçeve */
+        }
+
+    .active-thumbnail {
+        border: 3px solid #007bff !important; /* Seçili küçük resme kalıcı mavi çerçeve */
+    }
+</style>

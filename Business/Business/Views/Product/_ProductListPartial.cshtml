@@ -1,0 +1,38 @@
+﻿@using Business.EntityLayer.Concrete
+@model List<Product>
+
+<section class="main-content-w3layouts-agileits">
+    <div class="container">
+        <h3 class="tittle text-center my-4">Ürünler</h3>
+        <div class="row justify-content-center">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <a href="/Product/ProductSingle/@item.ProductId" class="d-block">
+                            <img src="@(item.Images != null && item.Images.Any() ? item.Images.First().ImageUrl : "/images/default.png")"
+                                 class="card-img-top img-fluid rounded-top"
+                                 style="height: 250px; object-fit: cover;"
+                                 alt="Ürün Resmi">
+                        </a>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">
+                                <a href="/Product/ProductSingle/@item.ProductId" class="text-dark text-decoration-none">@item.ProductName</a>
+                            </h5>
+                            <p class="text-muted mb-2">@item.Category.CategoryName</p>
+                            <p class="card-text text-secondary flex-grow-1">
+                                @(item.ProductDescription.Length > 50 ? item.ProductDescription.Substring(0, 50) + "..." : item.ProductDescription)
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="font-weight-bold text-success">@item.ProductPrice ₺</span>
+                                <a href="/Product/ProductSingle/@item.ProductId" class="btn btn-outline-primary btn-sm">İncele</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+       
+    </div>
+</section>

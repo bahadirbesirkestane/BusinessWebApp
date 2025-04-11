@@ -1,0 +1,55 @@
+﻿@{
+    //var valueModel = ViewBag.ProductImages;
+}
+
+@using Business.EntityLayer.Concrete
+@model List<ProductImage>
+
+<h4>Ürüne Resim Ekle</h4>
+<hr>
+
+<!-- Ürün Bilgisi -->
+<div class="form-group">
+    <label>Ürün ID:</label>
+    <input type="text" class="form-control" value="@Model.First().ProductId" disabled />
+</div>
+
+@using (Html.BeginForm("AddProductImage", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.HiddenFor(x => x.First().ProductId)
+
+    <div class="form-group">
+        <label>Ürün İsmi:</label>
+        <input type="text" class="form-control" value="@Model.First().Product.ProductName" disabled />
+    </div>
+
+    <div class="form-group">
+        <label>Resim Seç</label>
+        <input type="file" name="files" class="form-control" multiple required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Resim Yükle</button>
+}
+
+<hr>
+
+<!-- Mevcut Resimler -->
+<h5>Mevcut Resimler</h5>
+
+@if (Model.First().Product.Images != null)
+{
+    <div class="row">
+        @foreach (var image in Model)
+        {
+            <div class="col-md-3 text-center">
+                <img src="@image.ImageUrl" class="img-thumbnail" style="width: 150px; height: 150px; object-fit: cover;" />
+                <br />
+                <a href="/Product/DeleteProductImage/@image.ProductImageId" class="btn btn-danger btn-sm mt-2">Sil</a>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p>Bu ürün için eklenmiş bir resim bulunmamaktadır.</p>
+}

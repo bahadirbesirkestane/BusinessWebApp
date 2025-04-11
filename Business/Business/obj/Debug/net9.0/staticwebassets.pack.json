@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Business.592vr15cdh.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\CardTemplate\\StyleSheet.css",
+      "PackagePath": "staticwebassets\\CardTemplate\\StyleSheet.css"
+    },
+    {
       "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\Liberty\\about.html",
       "PackagePath": "staticwebassets\\Liberty\\about.html"
     },
@@ -285,6 +289,70 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\images\\default.png",
+      "PackagePath": "staticwebassets\\images\\default.png"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\images\\products\\197247d7-2042-4c6e-b312-05509ec12aa7.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\197247d7-2042-4c6e-b312-05509ec12aa7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\images\\products\\2fd96780-c4ba-4bae-907b-708b474d3883.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\2fd96780-c4ba-4bae-907b-708b474d3883.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\images\\products\\36e8b551-060a-4464-b9c1-7e195bd25546.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\36e8b551-060a-4464-b9c1-7e195bd25546.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\images\\products\\3d0c667f-9677-41b3-b2fb-35cc693b2afc.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\3d0c667f-9677-41b3-b2fb-35cc693b2afc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\images\\products\\3f31cf32-bc6b-496e-b103-88133c6ecd3d.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\3f31cf32-bc6b-496e-b103-88133c6ecd3d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\images\\products\\495f7ea6-5211-4b2d-a146-040cb61776a2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\495f7ea6-5211-4b2d-a146-040cb61776a2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\images\\products\\64e42e3d-6363-4195-baff-b0cd5f93635a.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\64e42e3d-6363-4195-baff-b0cd5f93635a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\images\\products\\8195d951-1fc4-44fc-ab13-62fcad4ccd09.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\8195d951-1fc4-44fc-ab13-62fcad4ccd09.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\images\\products\\9419cdde-b707-4e9f-b84c-7d6230e73d0c.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\9419cdde-b707-4e9f-b84c-7d6230e73d0c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\images\\products\\a445466d-1739-4834-aab8-bb9daaeb5362.png",
+      "PackagePath": "staticwebassets\\images\\products\\a445466d-1739-4834-aab8-bb9daaeb5362.png"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\images\\products\\b91ff1e5-6cc3-434f-9540-9da74092c403.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\b91ff1e5-6cc3-434f-9540-9da74092c403.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\images\\products\\b9410770-2b62-424c-9f6c-09ad5621103f.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\b9410770-2b62-424c-9f6c-09ad5621103f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\images\\products\\cdd07b2a-3bea-4718-a2fc-fe839aabea03.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\cdd07b2a-3bea-4718-a2fc-fe839aabea03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\images\\products\\eb9281cd-2260-482e-b96d-c6bdf338e19a.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\eb9281cd-2260-482e-b96d-c6bdf338e19a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\images\\products\\ed73f6e2-3610-446f-a2fb-46b84def3f04.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\ed73f6e2-3610-446f-a2fb-46b84def3f04.jpg"
+    },
+    {
       "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
@@ -527,6 +595,306 @@
     {
       "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\account.html",
+      "PackagePath": "staticwebassets\\web\\account.html"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\cart.html",
+      "PackagePath": "staticwebassets\\web\\cart.html"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\contact.html",
+      "PackagePath": "staticwebassets\\web\\contact.html"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\web\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\css\\etalage.css",
+      "PackagePath": "staticwebassets\\web\\css\\etalage.css"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\css\\form.css",
+      "PackagePath": "staticwebassets\\web\\css\\form.css"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\css\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\web\\css\\jquery-ui.css"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\css\\megamenu.css",
+      "PackagePath": "staticwebassets\\web\\css\\megamenu.css"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\css\\style.css",
+      "PackagePath": "staticwebassets\\web\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\fonts\\glyphicons-halflings-regular.eot",
+      "PackagePath": "staticwebassets\\web\\fonts\\glyphicons-halflings-regular.eot"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\fonts\\glyphicons-halflings-regular.svg",
+      "PackagePath": "staticwebassets\\web\\fonts\\glyphicons-halflings-regular.svg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\fonts\\glyphicons-halflings-regular.ttf",
+      "PackagePath": "staticwebassets\\web\\fonts\\glyphicons-halflings-regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\fonts\\glyphicons-halflings-regular.woff",
+      "PackagePath": "staticwebassets\\web\\fonts\\glyphicons-halflings-regular.woff"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\fonts\\glyphicons-halflings-regular.woff2",
+      "PackagePath": "staticwebassets\\web\\fonts\\glyphicons-halflings-regular.woff2"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\b-arrow.png",
+      "PackagePath": "staticwebassets\\web\\images\\b-arrow.png"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\bag.png",
+      "PackagePath": "staticwebassets\\web\\images\\bag.png"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\banner1.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\banner1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\banner2.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\banner2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\banner3.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\banner3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\close.png",
+      "PackagePath": "staticwebassets\\web\\images\\close.png"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\do.png",
+      "PackagePath": "staticwebassets\\web\\images\\do.png"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\find.png",
+      "PackagePath": "staticwebassets\\web\\images\\find.png"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\img-sprite-left-right.png",
+      "PackagePath": "staticwebassets\\web\\images\\img-sprite-left-right.png"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\img-sprite.png",
+      "PackagePath": "staticwebassets\\web\\images\\img-sprite.png"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\left.png",
+      "PackagePath": "staticwebassets\\web\\images\\left.png"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\logo.png",
+      "PackagePath": "staticwebassets\\web\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\p1.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\p1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\p2.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\p2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\p3.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\p3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\p4.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\p4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\p5.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\p5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\p6.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\p6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\p7.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\p7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\p8.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\p8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\p9.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\p9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\r2.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\r2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\r3.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\r3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\r4.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\r4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\r5.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\r5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\right.png",
+      "PackagePath": "staticwebassets\\web\\images\\right.png"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\s1.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\s1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\s2.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\s2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\s3.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\s3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\s4.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\s4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\s5.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\s5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\s6.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\s6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\search1.png",
+      "PackagePath": "staticwebassets\\web\\images\\search1.png"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\social2.png",
+      "PackagePath": "staticwebassets\\web\\images\\social2.png"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\ss1.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\ss1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\ss2.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\ss2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\ss33.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\ss33.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\ss4.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\ss4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\ss44.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\ss44.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\star.png",
+      "PackagePath": "staticwebassets\\web\\images\\star.png"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\t1.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\t1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\t2.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\t2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\ts1.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\ts1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\ts11.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\ts11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\ts2.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\ts2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\ts3.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\ts3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\images\\ts4.jpg",
+      "PackagePath": "staticwebassets\\web\\images\\ts4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\index.html",
+      "PackagePath": "staticwebassets\\web\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\js\\jquery-1.11.1.min.js",
+      "PackagePath": "staticwebassets\\web\\js\\jquery-1.11.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\js\\jquery.easydropdown.js",
+      "PackagePath": "staticwebassets\\web\\js\\jquery.easydropdown.js"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\js\\jquery.etalage.min.js",
+      "PackagePath": "staticwebassets\\web\\js\\jquery.etalage.min.js"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\js\\jquery.flexisel.js",
+      "PackagePath": "staticwebassets\\web\\js\\jquery.flexisel.js"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\js\\jquery.jscrollpane.min.js",
+      "PackagePath": "staticwebassets\\web\\js\\jquery.jscrollpane.min.js"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\js\\megamenu.js",
+      "PackagePath": "staticwebassets\\web\\js\\megamenu.js"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\js\\menu_jquery.js",
+      "PackagePath": "staticwebassets\\web\\js\\menu_jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\js\\responsiveslides.min.js",
+      "PackagePath": "staticwebassets\\web\\js\\responsiveslides.min.js"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\js\\simpleCart.min.js",
+      "PackagePath": "staticwebassets\\web\\js\\simpleCart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\login.html",
+      "PackagePath": "staticwebassets\\web\\login.html"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\products.html",
+      "PackagePath": "staticwebassets\\web\\products.html"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\single.html",
+      "PackagePath": "staticwebassets\\web\\single.html"
+    },
+    {
+      "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\web\\w3layouts-License.txt",
+      "PackagePath": "staticwebassets\\web\\w3layouts-License.txt"
     },
     {
       "Id": "C:\\Users\\O M E N\\Masaüstü\\BusinessWebApp\\Business\\Business\\wwwroot\\writer.rar",

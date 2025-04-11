@@ -1,0 +1,42 @@
+﻿
+@using Business.EntityLayer.Concrete
+@model List<Comment>
+
+<div class="comments">
+    <h3 class="aside-title ">Yorumlar(@Model.Count)</h3>
+
+    @if(Model.Count!=0)
+    {
+        <div class="comments-grids">
+
+            @foreach (var item in Model)
+            {
+                <div class="media-grid">
+                    <div class="media">
+                        @* <a class="comment-img" href="#url"><img src="assets/images/team1.jpg" class="img-fluid" width="100px" alt="placeholder image"></a> *@
+                        <div class="media-body comments-grid-right">
+                            <h5>@item.CommentUserName</h5>
+                            <ul class="p-0 comment">
+                                <li class="">@(((DateTime)item.CommentDate).ToString("dd MMM yyyy HH:mm"))</li>
+                                <li>
+                                    <a href="#comment" class="replay"> Cevapla</a>
+                                </li>
+                            </ul>
+                            <p>
+                                @item.CommentContent
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            }
+
+
+
+        </div>
+    }
+    else
+    {
+        <h5 class="aside-title ">Henüz hiç yorum yok. İlk yorum bırakan siz olun.</h5>
+    }
+    
+</div>

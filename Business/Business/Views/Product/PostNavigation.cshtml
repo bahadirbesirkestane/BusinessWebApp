@@ -1,0 +1,35 @@
+﻿@using Business.Models.ViewModel
+@model PrevNextPageViewModel
+
+
+
+
+<nav class="post-navigation row mt-5 py-4">
+    @if (Model.PreviousProduct != null)
+    {
+        <div class="post-prev col-6 pr-sm-5">
+            <span class="nav-title">
+                <span class="fa fa-angle-double-left me-2"></span> Önceki Ürün
+            </span>
+            <a href="/Product/ProductSingle/@Model.PreviousProduct.ProductId" rel="prev" class="posts-view posts-view-left">
+                <img src="@(Model.PreviousProduct.Images != null && Model.PreviousProduct.Images.Any() ? Model.PreviousProduct.Images.First().ImageUrl : "/images/default.png")"
+                     class="img-fluid postimg d-none d-md-block">
+                <label>@Model.PreviousProduct.ProductName</label>
+            </a>
+        </div>
+    }
+
+    @if (Model.NextProduct != null)
+    {
+        <div class="post-next col-6 pl-sm-5 text-right">
+            <span class="nav-title">
+                Sonraki Ürün <span class="fa fa-angle-double-right ms-2"> </span><span class="next-post pull-right"></span>
+            </span>
+            <a href="/Product/ProductSingle/@Model.NextProduct.ProductId" rel="next" class="posts-view posts-view-right">
+                <label>@Model.NextProduct.ProductName</label>
+                <img src="@(Model.NextProduct.Images != null && Model.NextProduct.Images.Any() ? Model.NextProduct.Images.First().ImageUrl : "/images/default.png")"
+                     class="img-fluid postimg d-none d-md-block">
+            </a>
+        </div>
+    }
+</nav>

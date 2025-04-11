@@ -1,0 +1,90 @@
+﻿@{
+    ViewData["Title"] = "CategoryList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@using Business.EntityLayer.Concrete
+@model Message
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">@TempData["Success"]</div>
+}
+
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+            <h4>📩 Mesaj Detayı</h4>
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <tr>
+                    <th>İsim:</th>
+                    <td>@Model.CustomerName</td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <td>@Model.CustomerEmail</td>
+                </tr>
+                <tr>
+                    <th>Telefon:</th>
+                    <td>@Model.CustomerPhone</td>
+                </tr>
+                <tr>
+                    <th>Gönderim Tarihi:</th>
+                    <td>@Model.MessageCreatedDate.ToString("dd MMM yyyy HH:mm")</td>
+                </tr>
+                @if(Model.Product!=null)
+                {
+                    <tr>
+                        <th>Ürün:</th>
+                        <td>@Model.Product.ProductName</td>
+                    </tr>
+                }
+                
+            </table>
+
+            <div class="card mt-3 p-3" style="background-color: #f8f9fa;">
+                <h5>📜 Müşteri Mesajı:</h5>
+                <p>@Model.CustomerMessage</p>
+            </div>
+
+            @if (Model.MessageIsAnswered)
+            {
+                <div class="card mt-3 p-3 border-left-success" style="border-left: 5px solid green;">
+                    <h5>✅ Admin Yanıtı:</h5>
+                    <p>@Model.AdminReply</p>
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-warning mt-3">
+                    <strong>⚠ Bu mesaj henüz yanıtlanmadı.</strong>
+                </div>
+
+                <div class="card mt-3 p-3">
+                    <h5>✏ Yanıt Ver</h5>
+                    <form asp-action="ReplyMessage" asp-controller="Message" method="post">
+                        <input type="hidden" name="id" value="@Model.MessageId" />
+                        <div class="form-group">
+                            <label for="replyText">Yanıtınız:</label>
+                            <textarea class="form-control" name="replyText" rows="4" placeholder="Yanıtınızı buraya yazın..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success mt-2">
+                            <i class="fas fa-reply"></i> Yanıt Gönder
+                        </button>
+                    </form>
+                </div>
+            }
+        </div>
+    </div>
+
+    <a href="@Url.Action("MessageList", "Message")" class="btn btn-secondary mt-3">
+        <i class="fas fa-arrow-left"></i> Geri Dön
+    </a>
+</div>
